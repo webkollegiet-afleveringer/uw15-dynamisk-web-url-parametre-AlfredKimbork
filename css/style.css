@@ -20,3 +20,11 @@ img {
     display: flex;
 }
 
+.--liked {
+    stroke: #ff0000;
+
+    & path {
+        fill: #ff0000;
+    }
+}
+
