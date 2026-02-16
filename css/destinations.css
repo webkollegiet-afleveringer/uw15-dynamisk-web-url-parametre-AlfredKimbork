@@ -1,7 +1,8 @@
 @import url(./style.css);
 
 .main {
-    margin-block: 2rem;
+    margin-block: 1rem;
+    gap: 4rem;
 }
 
 .destination__figure {
@@ -35,4 +36,49 @@
         text-transform: uppercase;
         font-size: 1.25rem;
     }
+}
+
+.destination__content {
+    align-self: center;
+
+    display: flex;
+    gap: 1.25rem;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.content__location {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.content__title {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.content__subtitle {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.content__text {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.facilities__heading {
+    align-self: start;
+    font-weight: 500;
+}
+
+.facilities__list {
+    align-self: start;
+    padding-inline: 1rem;
+}
+
+.facilities__item {
+    font-size: 1rem;
+    font-weight: 300;
 }

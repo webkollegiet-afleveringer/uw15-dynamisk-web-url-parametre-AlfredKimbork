@@ -21,14 +21,13 @@ fetch("http://localhost:8000/destinations")
                 </button>
             </figcaption>
         </figure>
-
-        <section>
-            <h1>${location.destination}</h1>
-            <h2>${location.title}</h2>
-            <span>${location.subtitle}</span>
-            <p>${location.text}</p>
-            <h3>Faciliteter</h3>
-            <ul>${location.facilities.map(facility => {return `<li>${facility}</li>`}).join("")}</ul>
+        <section class="destination__content">
+            <h1 class="content__location">${location.destination}</h1>
+            <h2 class="content__title">${location.title}</h2>
+            <span class="content__subtitle">${location.subtitle}</span>
+            <p class="content__text">${location.text}</p>
+            <h3 class="facilities__heading">Faciliteter</h3>
+            <ul class="facilities__list">${location.facilities.map(facility => {return `<li class="facilities__item">${facility}</li>`}).join("")}</ul>
         </section>
         `;
     });
