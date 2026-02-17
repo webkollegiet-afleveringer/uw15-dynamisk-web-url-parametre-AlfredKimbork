@@ -1,13 +1,17 @@
 @import url(./style.css);
 
+.main {
+    margin-inline: max(1rem, (100% - 75rem) / 2);
+}
+
 .for-rent__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 22.5%));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 24%));
 
     gap: 1rem;
     justify-content: center;
 
-    margin: auto;
+    margin-top: 1rem;
 }
 
 .location__img {
@@ -26,7 +30,9 @@
 }
 
 .location__more {
+    font-size: .875rem;
     color: #000;
-    text-decoration: none;
     font-weight: 200;
+    text-transform: uppercase;
+    text-decoration: none;
 }

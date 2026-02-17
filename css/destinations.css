@@ -51,6 +51,7 @@
 .content__location {
     font-size: 1.25rem;
     font-weight: 300;
+    text-transform: uppercase;
 }
 
 .content__title {
