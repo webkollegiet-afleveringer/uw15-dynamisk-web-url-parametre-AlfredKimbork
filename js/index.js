@@ -6,9 +6,9 @@ main.innerHTML = `
     </ul>
 `;
 
-fetch("http://localhost:8000/destinations")
+fetch("./data/destinations.json")
     .then(response => response.json())
-    .then(data => data.forEach(location => {
+    .then(data => data.destinations.forEach(location => {
         document.querySelector(".for-rent__list").innerHTML += `
             <figure class="location">
                 <img class="location__img" src="./img/${location.image}" alt="${location.title}">
